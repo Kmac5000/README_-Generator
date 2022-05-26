@@ -16,13 +16,13 @@ function generateMarkdown(data) {
   ## Description 
   ---
   ${data.description}
-  ## Table of Contents
+  ## <ins>Table of Contents</ins>
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
-  * [Contact](#contact)
+  * [Contact](#questions)
   ***
   ## Installation 
   ${data.install}
@@ -33,9 +33,9 @@ function generateMarkdown(data) {
   ## Contributing 
   ${data.contributors}
   ## Tests
-  ${data.test}
+  ${data.tests}
   ___
-  ## Contact:
+  ## Questions:
 ${data.email}\n 
 https://github.com/${data.github}
 `;

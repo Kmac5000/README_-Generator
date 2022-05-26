@@ -30,6 +30,37 @@ const askQuestions = () => {
         message: "What is your Github user name?",
         name: "github",
       },
+      {
+        type: "input",
+        message: "What needs to be installed for the user to run this program?",
+        name: "install",
+      },
+      {
+        type: "input",
+        message: "What are the uses of your application?",
+        name: "usage",
+      },
+      {
+        type: "input",
+        message: "Who has contributed to this project?",
+        name: "contributing",
+      },
+      {
+        type: "input",
+        message: "What tests have been done on your project?",
+        name: "tests",
+      },
+      {
+        type: "checkbox",
+        message: "What licences are required?",
+        name: "license",
+      },
+      {
+        type: "checkbox",
+        name: "license",
+        message: "what license will you use?",
+        choices: ["Apache License 2.0", "GNU GPLv3", "MIT", "ISC"],
+      },
     ])
     .then((response) => {
       console.log(response);
