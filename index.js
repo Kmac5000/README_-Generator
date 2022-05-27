@@ -52,14 +52,9 @@ const askQuestions = () => {
       },
       {
         type: "checkbox",
-        message: "What licences are required?",
-        name: "license",
-      },
-      {
-        type: "checkbox",
-        name: "license",
         message: "what license will you use?",
-        choices: ["Apache License 2.0", "GNU GPLv3", "MIT", "ISC"],
+        name: "license",
+        choices: ["Apache_2.0", "GPLv3", "MIT", "IPL_1.0"],
       },
     ])
     .then((response) => {
@@ -71,12 +66,7 @@ const askQuestions = () => {
     });
 };
 // TODO: Create a function to write README file
-// const writeToFile = (data) => {
-//   fs.writeFile("./assets/README.md", JSON.stringify(data)),
-//     (err) => {
-//       err ? console.log(err) : resolve(true);
-//     };
-// };
+
 // TODO: Create a function to initialize app
 function init() {
   askQuestions();
